@@ -1,0 +1,11 @@
+[package]
+name = "contacts_app"
+edition = "2024.beta"
+
+[dependencies]
+enclave = { local = "../enclave" }
+Sui = { git = "https://github.com/MystenLabs/sui.git", subdir = "crates/sui-framework/packages/sui-framework", rev = "209f0da8e316" }
+
+[addresses]
+app = "0x0"
+

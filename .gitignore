@@ -1,0 +1,79 @@
+# Root .gitignore for CallerID project
+
+# Environment variables and secrets
+.env
+.env*.local
+.env.development.local
+.env.test.local
+.env.production.local
+*.env
+local.properties
+
+# Private keys and certificates
+*.pem
+*.key
+*.jks
+*.keystore
+*.p12
+*.pfx
+
+# Node modules
+node_modules/
+.pnp
+.pnp.js
+
+# Build outputs
+build/
+dist/
+out/
+.next/
+target/
+bin/
+gen/
+release/
+
+# Android specific
+*.apk
+*.aar
+*.ap_
+*.aab
+*.dex
+.gradle/
+.externalNativeBuild
+.cxx/
+google-services.json
+
+# IDE
+.vscode/
+.idea/
+*.iml
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+*.log
+
+# TypeScript
+*.tsbuildinfo
+
+# Vercel
+.vercel
+
+# Nautilus server specific
+user-data.sh
+trust-policy.json
+secrets-policy.json
+
+# Executables
+*.exe
+
+# Contract build files (already in Contract/.gitignore but adding here for clarity)
+Contract/build/
+
+# Temporary files
+*.tmp
+*.temp
+

@@ -1,0 +1,5 @@
+# External endpoints allowed for this enclave application.
+# The contacts workflow only processes user-supplied CSV payloads,
+# so it does not require outbound access.
+endpoints: []
+

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardView"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="12dp"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="12dp"
+    app:cardBackgroundColor="@android:color/transparent">
+
+    <RelativeLayout
+        android:id="@+id/popupContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="220dp"
+        android:maxWidth="280dp"
+        android:background="@drawable/popup_background"
+        android:padding="20dp">
+
+        <!-- Close Button (X) -->
+        <Button
+            android:id="@+id/btnClose"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/close_button_background"
+            android:text="×"
+            android:textColor="@color/popup_text_primary"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:padding="0dp"
+            android:minWidth="0dp"
+            android:minHeight="0dp" />
+
+        <!-- Content Layout -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="8dp">
+
+            <!-- Name Section -->
+            <TextView
+                android:id="@+id/tvCallerName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Checking..."
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/popup_text_primary"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_marginBottom="12dp"
+                android:shadowColor="#80000000"
+                android:shadowDx="0"
+                android:shadowDy="2"
+                android:shadowRadius="4" />
+
+            <!-- Spam Report Badge -->
+            <LinearLayout
+                android:id="@+id/spamBadgeContainer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:paddingTop="6dp"
+                android:paddingBottom="6dp"
+                android:background="@drawable/spam_badge_background"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Spam report: "
+                    android:textSize="13sp"
+                    android:textColor="@color/popup_text_primary"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvSpamReport"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="5"
+                    android:textSize="13sp"
+                    android:textColor="@color/popup_text_primary"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <!-- Drag Handle Indicator -->
+            <View
+                android:layout_width="40dp"
+                android:layout_height="4dp"
+                android:layout_marginTop="12dp"
+                android:background="#60FFFFFF"
+                android:layout_gravity="center"
+                android:alpha="0.6" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
+

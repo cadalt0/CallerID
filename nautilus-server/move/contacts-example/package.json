@@ -1,0 +1,15 @@
+{
+  "name": "encrypt-contacts",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Encrypt contact data from Nautilus enclave using Seal SDK",
+  "main": "encrypt-contacts.js",
+  "scripts": {
+    "start": "node encrypt-contacts.js"
+  },
+  "dependencies": {
+    "@mysten/seal": "^0.9.4",
+    "@mysten/sui": "^1.0.0"
+  }
+}
+

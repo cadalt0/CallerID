@@ -1,0 +1,22 @@
+{
+  "name": "callerid-tests",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Test scripts for CallerID contract",
+  "scripts": {
+    "add-contacts": "node add-contacts.js",
+    "get-contact": "node get-contact.js",
+    "update-name": "node update-name.js",
+    "update-spam-type": "node update-spam-type.js",
+    "stake": "node stake.js",
+    "unstake": "node unstake.js",
+    "get-stake": "node get-stake.js",
+    "report-spam": "node report-spam.js",
+    "report-not-spam": "node report-not-spam.js"
+  },
+  "dependencies": {
+    "@mysten/sui": "^1.0.0"
+  }
+}
+
+

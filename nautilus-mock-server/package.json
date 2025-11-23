@@ -1,0 +1,23 @@
+{
+  "name": "callerid-mock-server",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch src/server.ts",
+    "start": "node dist/server.js",
+    "build": "tsc -p tsconfig.json"
+  },
+  "dependencies": {
+    "blakejs": "^1.2.1",
+    "fastest-validator": "^1.17.0",
+    "fastify": "^4.28.1",
+    "nanoid": "^5.0.7"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.30",
+    "tsx": "^4.15.7",
+    "typescript": "^5.6.3"
+  }
+}
+
