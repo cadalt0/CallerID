@@ -111,6 +111,9 @@ A modular Sui Move contract for storing contacts, staking, and spam reporting.
 
 ```bash
 sui move build
-sui move test
 ```
+For test check tests/js folder
+you can run individual scripts to check each features
+
+Note must keep private key in env to scripts to work 
 
