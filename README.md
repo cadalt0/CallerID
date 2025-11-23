@@ -1,13 +1,14 @@
 <div align="center">
 
-![CallerID Logo](WEBSITE/public/calleridlogo.png
-)
+
+<img src="WEBSITE/public/calleridlogo.png" alt="CallerID Logo" width="150" height="150">
+
 
 # CallerID
 
 **A decentralized encrypted phonebook you can Trust**
 
-[![License](https://img.shields.io/badge/license-Apache--2.0-blue.svg)](LICENSE)
+
 [![Sui](https://img.shields.io/badge/blockchain-Sui-6fbcf0)](https://sui.io)
 
 </div>
