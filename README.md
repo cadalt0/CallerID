@@ -1,6 +1,7 @@
 <div align="center">
 
-![CallerID Logo](WEBSITE/public/setting.png)
+![CallerID Logo](WEBSITE/public/calleridlogo.png
+)
 
 # CallerID
 
